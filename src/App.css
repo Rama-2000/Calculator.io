@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+.app{
+  margin: 100px 25%;
+  max-width: 445px;
+ 
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.keypad{
+  display: grid;
+  grid-template-columns: auto;
+  background-color: #6aafe8;
+  padding: 10px;
+  max-width: 425px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.keypad .numerical{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.keypad .operations{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
 }
-
-.App-link {
-  color: #61dafb;
+.keypad input{
+  width: 100px;
+  height: 50px;
+  margin: 3px;
+  font-size: 26px;
+  background-color: rgb(141, 194, 196);
+  border-radius: 5px;
+  border-color: #6aafe8;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.keypad input:hover{
+  border-color: yellow;
+  color: ghostwhite;
+}
+.result input{
+  width: 429px;
+  padding: 5px;
+  height: 35px;
+  font-size: 26px;
+  text-align: right;
+  border: 3px solid rgb(190, 178, 178);
+  color: rgb(124, 121, 90);
 }
